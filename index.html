@@ -4,9 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Novellario</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f7f4eb;
+      color: #2e2b1f;
+    }
+    header {
+      background-color: #5b3a29;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #8c7157;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1e9d4;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    .novelle {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .novella {
+      background-color: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .novella h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .novella p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #5b3a29;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Benvenuto su Novellario</h1>
-  <p>Questo è il mio primo sito pubblicato con GitHub Pages.</p>
+  <header>
+    <h1>Novellario</h1>
+    <p>Racconti brevi della società contemporanea, tratti dai numeri</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Le Giornate</a>
+    <a href="#">Atlante</a>
+    <a href="#">Chi Siamo</a>
+  </nav>
+  <section class="hero">
+    <h1>Benvenuti nel Novellario</h1>
+    <p>Dati pubblici, letture indipendenti, storie quantificate</p>
+  </section>
+  <section class="novelle">
+    <div class="novella">
+      <h2>📍 Novella #1 - Reddito mediano per regione</h2>
+      <p>Dal Trentino alla Sicilia, le disuguaglianze si raccontano in silenzio, con cifre. <strong>Oggettivamente</strong>, il Nord domina.</p>
+    </div>
+    <div class="novella">
+      <h2>📊 Novella #2 - Giovani e imprese</h2>
+      <p>Solo in alcune province l’imprenditoria under 35 cresce davvero. <strong>Oggettivamente</strong>, il divario è strutturale.</p>
+    </div>
+    <div class="novella">
+      <h2>🌍 Novella #3 - Tassi di natalità</h2>
+      <p>Il centro Italia resiste, il sud frena, il nord rallenta. <strong>Oggettivamente</strong>, nessuna regione cresce.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Novellario - Progetto indipendente di analisi territoriale</p>
+  </footer>
 </body>
 </html>
